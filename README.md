@@ -4,7 +4,7 @@ simple laravel package to connect your whatsapp and send messages.
 
 # Installation
 ```
-composer require tocaan/wa-integration
+composer require tocaan/gowasl-package
 ```
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php. <br />
