@@ -1,5 +1,5 @@
 {
-    "name": "tocaan/gowasl-package",
+    "name": "tocaan/wa-integration",
     "description": "simple laravel package to connect your whatsapp and send messages",
     "autoload": {
         "psr-4": {
