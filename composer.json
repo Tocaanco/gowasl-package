@@ -12,7 +12,7 @@
             "email": "tocaanco@github.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "WAIntegration\\" : "src/"
