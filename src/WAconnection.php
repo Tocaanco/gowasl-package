@@ -46,12 +46,16 @@ class WAconnection
             $res = json_decode($response);
 
             return response()->json([
+                'status'    => true,
                 'code'  => 200,
                 'message' => $res->message,
                 'data'  => $res->data,
             ]);
         }catch (\Exception $e){
             return response()->json([
+                'status'    => false,
+                'code'  => 500,
+                'message' => $res->message,
                 'error' => $e->getMessage(),
             ],500);
         }
