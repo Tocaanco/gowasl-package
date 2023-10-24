@@ -56,7 +56,6 @@ class WAconnection
                 'status'    => false,
                 'code'  => 500,
                 'message' => $res->message,
-                'error' => $e->getMessage(),
             ],500);
         }
     }
