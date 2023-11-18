@@ -128,7 +128,7 @@ Optionally you can use the Facade for shorter code. Add this to your facades: <b
    Message::sendGif([
       'phone' => '965xxxxxxxx',
       'url'  => 'url of your Gif',
-      'caption' => 'image caption (optional)'
+      'caption' => 'Gif caption (optional)'
    ]) 
 ```
 - Location
