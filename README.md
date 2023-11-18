@@ -75,5 +75,85 @@ Optionally you can use the Facade for shorter code. Add this to your facades: <b
       'body'  => 'Your Message Body Here'
    ]) 
 ```
+
+- Send Multi-Media Message Via Whatsapp <br />
+- Image
+```
+   Message::sendImage([
+      'phone' => '965xxxxxxxx',
+      'url'  => 'url of your image',
+      'caption' => 'image caption (optional)'
+   ]) 
+```
+- Video
+```
+   Message::sendVideo([
+      'phone' => '965xxxxxxxx',
+      'url'  => 'url of your video',
+      'caption' => 'image caption (optional)'
+   ]) 
+```
+- Audio
+```
+   Message::sendAudio([
+      'phone' => '965xxxxxxxx',
+      'url'  => 'url of your audio file',
+   ]) 
+```
+- Document
+```
+   Message::sendFile([
+      'phone' => '965xxxxxxxx',
+      'url'  => 'url of your document file',
+   ]) 
+```
+- Link
+```
+   Message::sendLink([
+      'phone' => '965xxxxxxxx',
+      'url'  => 'HTTPS URL',
+      'title' => 'URL Title',
+      'description' => 'URL Description',
+   ]) 
+```
+- Sticker
+```
+   Message::sendSticker([
+      'phone' => '965xxxxxxxx',
+      'url'  => 'url of your Sticker',
+   ]) 
+```
+- Gif
+```
+   Message::sendGif([
+      'phone' => '965xxxxxxxx',
+      'url'  => 'url of your Gif',
+      'caption' => 'image caption (optional)'
+   ]) 
+```
+- Location
+```
+   Message::sendLocation([
+      'phone' => '965xxxxxxxx',
+      'lat'  => 'location latitude',
+      'lng' => 'location longitude'
+   ]) 
+```
+- Contact
+```
+   Message::sendContact([
+      'phone' => '965xxxxxxxx',
+      'name'  => 'Contact Name',
+      'contact' => 'Contact Whatsapp Number',
+      'organization' => 'Contact Organization (optional)',
+   ]) 
+```
+- Mention
+```
+   Message::sendMention([
+      'phone' => '965xxxxxxxx',
+      'mention' => 'Mention Whatsapp Number',
+   ]) 
+```
  
  Note: Your Connection status must be connected it means that you had already scanned QR.
