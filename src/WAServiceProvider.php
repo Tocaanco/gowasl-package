@@ -1,8 +1,6 @@
 <?php
 namespace WAIntegration;
 use Illuminate\Support\ServiceProvider;
-use WAIntegration\Facades\InstanceFacade;
-use WAIntegration\Facades\MessageFacade;
 use WAIntegration\Services\InstanceService;
 use WAIntegration\Services\MessageService;
 use WAIntegration\WAconnection;

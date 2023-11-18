@@ -63,5 +63,15 @@ class MessageService implements MessageContract
         return (new WAconnection())->startRequest($this->base.'/sendMention','POST',$data);
     }
 
+    public function sendReaction($data)
+    {
+        return (new WAconnection())->startRequest($this->base.'/sendReaction','POST',$data);
+    }
+
+    public function sendBulkMessage($data)
+    {
+        return (new WAconnection())->startRequest($this->base.'/sendGroupMessage','POST',$data);
+    }
+
 
 }
