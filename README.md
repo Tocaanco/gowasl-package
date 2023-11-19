@@ -113,7 +113,7 @@ Optionally you can use the Facade for shorter code. Add this to your facades: <b
       'phone' => '965xxxxxxxx',
       'url'  => 'HTTPS URL',
       'title' => 'URL Title',
-      'description' => 'URL Description',
+      'body' => 'URL Description',
    ]) 
 ```
 - Sticker
