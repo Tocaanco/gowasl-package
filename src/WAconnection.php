@@ -43,13 +43,13 @@ class WAconnection
             $response = curl_exec($curl);
             curl_close($curl);
 
-            $res = json_decode($response);
+             $res = json_decode($response, true);
 
             return [
-                'status'    => true,
+                'status'    => $res["success"] ?? false,
                 'code'  => 200,
-                'message' => $res->message,
-                'data'  => $res->data,
+                'message' => $res["message"] ?? "",
+                'data'  => $res["data"] ?? [],
             ];
         }catch (\Exception $e){
             return [
