@@ -41,13 +41,15 @@ class WAconnection
             ));
 
             $response = curl_exec($curl);
+            $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+
             curl_close($curl);
 
              $res = json_decode($response, true);
 
             return [
                 'status'    => $res["success"] ?? false,
-                'code'  => 200,
+                'code'  =>  $httpcode ?? 200,
                 'message' => $res["message"] ?? "",
                 'data'  => $res["data"] ?? [],
             ];
